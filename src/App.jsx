@@ -22,17 +22,13 @@ function App() {
     }
     return true;
   }
-  useEffect(() => {
-    console.log(tags);
-    console.log(...tags);
-  }, [tags]);
+  useEffect(() => {}, [tags]);
   return (
     <>
       <main>
         <Nav tags={tags} setTags={setTags}></Nav>
         {data
           .filter((el) => {
-            console.log([...el.languages, ...el.tools]);
             return isSubset(tags, [
               ...el.languages,
               ...el.tools,
