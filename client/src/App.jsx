@@ -46,7 +46,7 @@ function App() {
                 {el.featured && <div className="green-line"></div>}
                 <div>
                   <img
-                    src={`/src/assets${el.logo.slice(1)}`}
+                    src={`/assets${el.logo.slice(1)}`}
                     alt=""
                     height={"88px"}
                     width={"88px"}
