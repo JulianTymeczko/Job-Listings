@@ -1,0 +1,10 @@
+header {
+  background-image: url(/assets/images/bg-header-desktop.svg);
+  background-color: hsl(180, 29%, 50%);
+  height: 156px;
+}
+@media screen and (max-width: 767px) {
+  header {
+    background-image: url(/assets/images/bg-header-mobile.svg);
+  }
+}
